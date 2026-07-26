@@ -1,223 +1,81 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Download Website Code</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
-body{background:linear-gradient(135deg,#0A1A3F,#1A2B5C);min-height:100vh;padding:20px;color:#fff}
-.box{max-width:600px;margin:40px auto;background:#fff;border-radius:20px;padding:30px;color:#333;box-shadow:0 20px 60px rgba(0,0,0,.3)}
-.logo{width:80px;height:80px;background:linear-gradient(135deg,#D4AF37,#B8941F);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:2.5rem;color:#fff}
-h1{color:#0A1A3F;text-align:center;margin-bottom:10px;font-size:1.6rem}
-.sub{text-align:center;color:#666;margin-bottom:25px;font-size:.95rem}
-.btn{width:100%;padding:16px;border:none;border-radius:12px;font-size:1.05rem;font-weight:600;cursor:pointer;margin-bottom:12px;display:flex;align-items:center;justify-content:center;gap:10px;transition:.3s}
-.dl{background:linear-gradient(135deg,#D4AF37,#B8941F);color:#fff}
-.cp{background:linear-gradient(135deg,#0A1A3F,#1A2B5C);color:#fff}
-.btn:active{transform:scale(.98)}
-.msg{padding:14px;border-radius:10px;margin-top:15px;text-align:center;display:none;font-weight:500}
-.ok{background:#d1fae5;color:#065f46;display:block}
-.info{background:#fef3c7;border-left:4px solid #D4AF37;padding:15px;border-radius:8px;margin-top:20px;font-size:.9rem;color:#78350f;line-height:1.6}
-</style>
-</head>
-<body>
-<div class="box">
-<div class="logo">👑</div>
-<h1>Royal Tent House Website</h1>
-<p class="sub">नीचे दिए बटन से कोड डाउनलोड या कॉपी करें</p>
+Create a modern, premium, and responsive website for a Tent House & Event Management business.
 
-<button class="btn dl" onclick="downloadCode()">⬇️ Download Code (HTML File)</button>
-<button class="btn cp" onclick="copyCode()">📋 Copy Code to Clipboard</button>
+Business Name: [Your Business Name]
 
-<div class="msg" id="msg"></div>
+Theme:
+- Elegant, luxurious, and professional.
+- Use a combination of Royal Gold, White, and Dark Blue colors.
+- Smooth animations and premium UI.
 
-<div class="info">
-<b>📝 Instructions:</b><br>
-1. "Download" दबाएँ → <b>website.html</b> सेव होगी<br>
-2. उस फाइल को browser में खोलें<br>
-3. अपना नाम, नंबर, address edit करें<br>
-4. "Copy" बटन से पूरा code clipboard में आएगा
-</div>
-</div>
+Sections:
+1. Hero Section
+   - Full-width background image of a beautiful wedding decoration.
+   - Headline: "Making Every Celebration Memorable"
+   - Subheading: "Wedding | Birthday | Corporate Event | Catering | Decoration | Sound & Lighting"
+   - CTA Buttons: "Book Now" and "Call Now"
 
-<!-- यहाँ पूरा website code छिपा है -->
-<textarea id="sourceCode" style="display:none">
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Royal Tent House & Events - Premium wedding decoration and event management">
-<title>Royal Tent House & Events</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
-:root{--gold:#D4AF37;--gold-light:#F4E5B8;--gold-dark:#B8941F;--blue:#0A1A3F;--blue-light:#1A2B5C;--white:#fff;--bg:#fff;--bg2:#FAFAFA;--text:#0A1A3F;--text2:#4a5568;--border:rgba(10,26,63,.1);--glass:rgba(255,255,255,.7);--shadow:0 20px 60px rgba(10,26,63,.15);--shadow-gold:0 10px 40px rgba(212,175,55,.3)}
-[data-theme=dark]{--bg:#0A1A3F;--bg2:#0F2350;--text:#fff;--text2:#B8C1D9;--border:rgba(212,175,55,.2);--glass:rgba(10,26,63,.6)}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Poppins,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;transition:.4s}
-h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:700}
-.container{max-width:1280px;margin:0 auto;padding:0 24px}
-.section{padding:100px 0}
-.section-header{text-align:center;margin-bottom:70px}
-.section-tag{display:inline-block;color:var(--gold);letter-spacing:4px;text-transform:uppercase;margin-bottom:16px;font-weight:600;font-size:.9rem}
-.section-title{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:20px;background:linear-gradient(135deg,var(--blue),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-[data-theme=dark] .section-title{background:linear-gradient(135deg,var(--gold-light),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.section-subtitle{color:var(--text2);max-width:650px;margin:0 auto;font-size:1.05rem}
-.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:20px 0;transition:.4s;background:transparent}
-.navbar.scrolled{background:var(--glass);backdrop-filter:blur(20px);padding:12px 0;box-shadow:0 8px 24px rgba(0,0,0,.1)}
-.nav-container{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
-.navbar.scrolled .logo{color:var(--text)}
-.logo-icon{width:48px;height:48px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5rem;box-shadow:var(--shadow-gold)}
-.logo-text-main{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700}
-.logo-text-sub{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
-.nav-menu{display:flex;list-style:none;gap:36px;align-items:center}
-.nav-menu a{text-decoration:none;color:#fff;font-size:.95rem;font-weight:500;transition:.3s;padding:8px 0;position:relative}
-.navbar.scrolled .nav-menu a{color:var(--text)}
-.nav-menu a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--gold);transition:.3s}
-.nav-menu a:hover::after,.nav-menu a.active::after{width:100%}
-.nav-menu a:hover{color:var(--gold)}
-.nav-actions{display:flex;gap:16px;align-items:center}
-.theme-toggle{background:transparent;border:1.5px solid var(--gold);color:var(--gold);width:40px;height:40px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.3s}
-.theme-toggle:hover{background:var(--gold);color:#fff;transform:rotate(180deg)}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:50px;font-weight:600;text-decoration:none;cursor:pointer;border:none;transition:.3s;font-family:Poppins,sans-serif;font-size:.95rem}
-.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:#fff;box-shadow:var(--shadow-gold)}
-.btn-primary:hover{transform:translateY(-3px);box-shadow:0 15px 45px rgba(212,175,55,.5)}
-.btn-outline{background:transparent;color:#fff;border:2px solid #fff}
-.btn-outline:hover{background:#fff;color:var(--blue)}
-.mobile-toggle{display:none;background:transparent;border:none;color:#fff;font-size:1.5rem;cursor:pointer}
-.navbar.scrolled .mobile-toggle{color:var(--text)}
-.hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;color:#fff;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1519741497674-611481863552?w=2000');background-size:cover;background-position:center;z-index:-2;animation:zoom 20s ease-in-out infinite alternate}
-@keyframes zoom{0%{transform:scale(1)}100%{transform:scale(1.1)}}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,26,63,.85),rgba(10,26,63,.6),rgba(212,175,55,.3));z-index:-1}
-.hero-content{text-align:center;max-width:900px;padding:0 24px;z-index:1}
-.hero-badge{display:inline-flex;align-items:center;gap:10px;padding:8px 20px;background:rgba(212,175,55,.15);border:1px solid var(--gold);border-radius:50px;font-size:.85rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:30px;backdrop-filter:blur(10px)}
-.hero-title{font-size:clamp(2.5rem,6vw,5rem);color:#fff;margin-bottom:24px;line-height:1.1}
-.hero-title .gold{background:linear-gradient(135deg,var(--gold),var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-style:italic}
-.hero-subtitle{font-size:clamp(1rem,2vw,1.25rem);margin-bottom:40px;opacity:.95;letter-spacing:1px;font-weight:300}
-.hero-services{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:50px}
-.hero-service-tag{padding:8px 20px;background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);border-radius:50px;font-size:.9rem;transition:.3s}
-.hero-service-tag:hover{background:var(--gold);border-color:var(--gold)}
-.hero-cta{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
-.hero-stats{display:flex;justify-content:center;gap:60px;margin-top:80px;flex-wrap:wrap}
-.stat-item{text-align:center}
-.stat-number{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;color:var(--gold);display:block}
-.stat-label{font-size:.85rem;text-transform:uppercase;letter-spacing:2px;opacity:.8}
-.about{background:var(--bg2)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.about-image-main{width:100%;height:500px;object-fit:cover;border-radius:20px;box-shadow:var(--shadow)}
-.about-badge{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:#fff;padding:20px 30px;border-radius:16px;text-align:center;box-shadow:var(--shadow-gold);display:inline-block;margin-top:20px}
-.about-badge-number{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;line-height:1}
-.about-content h2{font-size:clamp(2rem,3.5vw,2.8rem);margin-bottom:24px}
-.about-content h2 span{color:var(--gold);font-style:italic}
-.about-text{color:var(--text2);margin-bottom:20px;font-size:1.05rem}
-.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
-.service-card{background:var(--glass);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.3);border-radius:24px;padding:40px 30px;text-align:center;transition:.4s;cursor:pointer}
-.service-card:hover{transform:translateY(-10px);box-shadow:var(--shadow);border-color:var(--gold)}
-.service-icon{width:80px;height:80px;background:linear-gradient(135deg,var(--blue),var(--blue-light));border-radius:20px;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:2rem;margin:0 auto 24px;transition:.4s}
-.service-card:hover .service-icon{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:#fff;transform:rotateY(360deg)}
-.service-title{font-size:1.3rem;margin-bottom:12px}
-.service-desc{color:var(--text2);font-size:.95rem}
-.gallery{background:var(--bg2)}
-.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
-.gallery-item{position:relative;overflow:hidden;border-radius:16px;cursor:pointer;height:250px}
-.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.6s}
-.gallery-item:hover img{transform:scale(1.1)}
-.gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,26,63,.9),transparent);display:flex;align-items:flex-end;padding:24px;opacity:0;transition:.4s}
-.gallery-item:hover .gallery-overlay{opacity:1}
-.gallery-info h4{color:#fff;font-size:1.2rem;margin-bottom:4px}
-.gallery-info p{color:var(--gold);font-size:.85rem;letter-spacing:2px;text-transform:uppercase}
-.why-us{background:linear-gradient(135deg,var(--blue),var(--blue-light));color:#fff;position:relative;overflow:hidden}
-.why-us .section-title{background:linear-gradient(135deg,#fff,var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.why-us .section-subtitle{color:rgba(255,255,255,.8)}
-.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px}
-.why-card{background:rgba(255,255,255,.05);backdrop-filter:blur(20px);border:1px solid rgba(212,175,55,.2);border-radius:20px;padding:40px 30px;text-align:center;transition:.4s}
-.why-card:hover{background:rgba(212,175,55,.1);border-color:var(--gold);transform:translateY(-10px)}
-.why-icon{width:70px;height:70px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.8rem;margin:0 auto 20px;box-shadow:var(--shadow-gold)}
-.why-card h3{color:#fff;font-size:1.2rem;margin-bottom:12px}
-.why-card p{color:rgba(255,255,255,.75);font-size:.95rem}
-.testimonials-slider{max-width:800px;margin:0 auto;overflow:hidden}
-.testimonials-track{display:flex;transition:.6s}
-.testimonial-card{min-width:100%;padding:50px;background:var(--glass);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.3);border-radius:24px;text-align:center}
-.testimonial-stars{color:var(--gold);font-size:1.2rem;margin-bottom:20px;letter-spacing:4px}
-.testimonial-text{font-size:1.15rem;color:var(--text2);font-style:italic;margin-bottom:30px;line-height:1.8}
-.testimonial-author{display:flex;align-items:center;justify-content:center;gap:16px}
-.testimonial-avatar{width:65px;height:65px;border-radius:50%;object-fit:cover;border:3px solid var(--gold)}
-.testimonial-info h4{font-size:1.1rem;margin-bottom:4px}
-.testimonial-info p{color:var(--gold);font-size:.85rem}
-.testimonial-dots{display:flex;justify-content:center;gap:10px;margin-top:40px}
-.dot{width:10px;height:10px;border-radius:50%;background:var(--border);cursor:pointer;transition:.3s}
-.dot.active{background:var(--gold);width:30px;border-radius:5px}
-.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
-.pricing-card{background:var(--bg);border:1px solid var(--border);border-radius:24px;padding:45px 35px;transition:.4s}
-.pricing-card:hover{transform:translateY(-15px);box-shadow:var(--shadow);border-color:var(--gold)}
-.pricing-card.featured{background:linear-gradient(135deg,var(--blue),var(--blue-light));color:#fff;border:2px solid var(--gold);transform:scale(1.05)}
-.pricing-card.featured:hover{transform:scale(1.05) translateY(-15px)}
-.pricing-badge{position:absolute;top:20px;right:20px;background:var(--gold);color:#fff;padding:6px 14px;border-radius:50px;font-size:.75rem;font-weight:600;letter-spacing:1px;text-transform:uppercase}
-.pricing-icon{width:70px;height:70px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));border-radius:20px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.8rem;margin-bottom:20px}
-.pricing-name{font-size:1.5rem;margin-bottom:8px}
-.pricing-desc{color:var(--text2);font-size:.9rem;margin-bottom:25px}
-.pricing-card.featured .pricing-desc{color:rgba(255,255,255,.7)}
-.pricing-price{display:flex;align-items:baseline;gap:6px;margin-bottom:30px;padding-bottom:30px;border-bottom:1px dashed var(--border)}
-.pricing-currency{font-size:1.5rem;color:var(--gold);font-weight:600}
-.pricing-amount{font-family:'Playfair Display',serif;font-size:3rem;font-weight:700}
-.pricing-features{list-style:none;margin-bottom:30px}
-.pricing-features li{padding:10px 0;color:var(--text2);display:flex;align-items:center;gap:12px}
-.pricing-features li i{color:var(--gold)}
-.pricing-btn{width:100%;justify-content:center}
-.faq-container{max-width:850px;margin:0 auto}
-.faq-item{background:var(--bg2);border:1px solid var(--border);border-radius:16px;margin-bottom:16px;overflow:hidden;transition:.3s}
-.faq-item.active{border-color:var(--gold);box-shadow:0 8px 24px rgba(0,0,0,.1)}
-.faq-question{padding:24px 30px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;font-weight:600}
-.faq-icon{width:35px;height:35px;background:var(--gold);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.3s}
-.faq-item.active .faq-icon{transform:rotate(45deg)}
-.faq-answer{max-height:0;overflow:hidden;transition:.4s}
-.faq-answer-content{padding:0 30px 24px;color:var(--text2);line-height:1.7}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
-.contact-info-card{background:linear-gradient(135deg,var(--blue),var(--blue-light));color:#fff;padding:50px 40px;border-radius:24px}
-.contact-info-card h3{color:#fff;font-size:1.8rem;margin-bottom:12px}
-.contact-info-card>p{color:rgba(255,255,255,.8);margin-bottom:35px}
-.contact-info-list{list-style:none;margin-bottom:35px}
-.contact-info-item{display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.1)}
-.contact-info-item:last-child{border-bottom:none}
-.contact-info-icon{width:50px;height:50px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));border-radius:14px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;flex-shrink:0}
-.contact-info-content h5{color:#fff;font-family:Poppins,sans-serif;font-size:.85rem;text-transform:uppercase;letter-spacing:2px;margin-bottom:4px;font-weight:500}
-.contact-info-content p,.contact-info-content a{color:rgba(255,255,255,.9);text-decoration:none;font-size:1rem}
-.contact-form-wrapper{background:var(--bg);padding:50px 40px;border-radius:24px;box-shadow:0 8px 24px rgba(0,0,0,.1);border:1px solid var(--border)}
-.contact-form-wrapper h3{font-size:1.8rem;margin-bottom:12px}
-.contact-form-wrapper>p{color:var(--text2);margin-bottom:30px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
-.form-group{margin-bottom:20px}
-.form-group label{display:block;margin-bottom:8px;font-weight:500;font-size:.9rem}
-.form-control{width:100%;padding:14px 18px;background:var(--bg2);border:1.5px solid var(--border);border-radius:12px;font-family:Poppins,sans-serif;font-size:.95rem;color:var(--text);transition:.3s}
-.form-control:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 4px rgba(212,175,55,.1)}
-textarea.form-control{resize:vertical;min-height:120px}
-.form-submit{width:100%;justify-content:center;padding:16px}
-.map-container{margin-top:60px;border-radius:24px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.1);border:3px solid var(--gold)}
-.map-container iframe{width:100%;height:400px;display:block;border:none}
-.footer{background:linear-gradient(135deg,var(--blue),#050E24);color:#fff;padding:80px 0 0}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:50px;margin-bottom:60px}
-.footer-brand p{color:rgba(255,255,255,.7);margin-bottom:25px;line-height:1.7}
-.footer-social{display:flex;gap:12px}
-.footer-social a{width:42px;height:42px;background:rgba(255,255,255,.08);border:1px solid rgba(212,175,55,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;transition:.3s}
-.footer-social a:hover{background:var(--gold);border-color:var(--gold);transform:translateY(-5px)}
-.footer h4{color:#fff;font-size:1.2rem;margin-bottom:25px;padding-bottom:12px;position:relative}
-.footer h4::after{content:'';position:absolute;bottom:0;left:0;width:40px;height:2px;background:var(--gold)}
-.footer-links{list-style:none}
-.footer-links li{margin-bottom:12px}
-.footer-links a{color:rgba(255,255,255,.7);text-decoration:none;transition:.3s}
-.footer-links a:hover{color:var(--gold)}
-.footer-bottom{padding:25px 0;border-top:1px solid rgba(255,255,255,.1);text-align:center;color:rgba(255,255,255,.6);font-size:.9rem}
-.floating-buttons{position:fixed;right:24px;bottom:24px;display:flex;flex-direction:column;gap:14px;z-index:999}
-.floating-btn{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-size:1.5rem;box-shadow:0 10px 30px rgba(0,0,0,.2);transition:.3s}
-.whatsapp-btn{background:linear-gradient(135deg,#25D366,#128C7E);animation:pulse 2s infinite}
-.call-btn{background:linear-gradient(135deg,var(--gold),var(--gold-dark));animation:pulse-gold 2s infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}50%{box-shadow:0 0 0 15px rgba(37,211,102,0)}}
-@keyframes pulse-gold{0%,100%{box-shadow:0 0 0 0 rgba(212,175,55,.7)}50%{box-shadow:0 0 0 15px rgba(212,175,55,0)}}
-.floating-btn:hover{transform:scale(1.1)}
-@media(max-width:1024px){.about-grid,.contact-grid{grid-template-columns:1fr;gap:50px}.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:768px){.section{padding:70px 0}.nav-menu{position:fixed;top:0;right:-100%;width:80%;max-width:350px;height:100vh;background:var(--bg);flex-direction:column;justify-content:center;gap:30px;padding
+2. About Us
+   - Business introduction with experience, quality service, and customer satisfaction.
+
+3. Our Services
+   - Wedding Tent Decoration
+   - Birthday Party Setup
+   - Corporate Events
+   - Catering Services
+   - Stage Decoration
+   - DJ & Sound System
+   - Lighting
+   - Flower Decoration
+   - Furniture & Tent Rental
+
+4. Gallery
+   - Beautiful masonry gallery with event images.
+   - Lightbox preview.
+
+5. Why Choose Us
+   - Affordable Pricing
+   - Professional Team
+   - Premium Decoration
+   - On-Time Service
+   - 24/7 Customer Support
+
+6. Customer Reviews
+   - Modern testimonial cards with star ratings.
+
+7. Pricing Packages
+   - Silver Package
+   - Gold Package
+   - Platinum Package
+
+8. FAQ Section
+
+9. Contact Section
+   - Contact Form
+   - Google Maps Integration
+   - WhatsApp Button
+   - Call Button
+   - Email
+
+10. Footer
+   - Social Media Links
+   - Quick Links
+   - Copyright
+
+Features:
+- Fully Mobile Responsive
+- SEO Optimized
+- Fast Loading
+- Modern Animations
+- Sticky Navigation
+- WhatsApp Floating Button
+- Click-to-Call Button
+- Google Maps
+- Online Booking Form
+- Dark Mode Toggle
+- Premium Fonts
+- High-Quality Images
+- Schema Markup
+- Clean HTML5, CSS3, JavaScript
+
+Style:
+Make the website look like a premium luxury event management company with world-class UI/UX. Use smooth scrolling, glassmorphism cards, elegant typography, modern icons, and high-quality visual effects. The design should impress visitors instantly and maximize customer inquiries.
