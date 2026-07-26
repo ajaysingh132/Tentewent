@@ -1,0 +1,4 @@
+POST /api/v1/auth/send-otp
+{
+  "phone": "9876543210"
+}
