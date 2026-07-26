@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>रॉयल टेंट हाउस वेबसाइट कोड डाउनलोड करें</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0A1A3F 0%, #1A2B5C 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            font-size: 3rem;
+            color: white;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+        }
+
+        h1 {
+            color: #0A1A3F;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .features {
+            background: #f9fafb;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 35px;
+            text-align: left;
+        }
+
+        .features h3 {
+            color: #0A1A3F;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .features ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .features li {
+            color: #4b5563;
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .features li::before {
+            content: '✓';
+            color: #D4AF37;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+            color: white;
+            border: none;
+            padding: 20px 50px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+        }
+
+        .download-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .info {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fef3c7;
+            border-left: 4px solid #D4AF37;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .info h4 {
+            color: #92400e;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            color: #78350f;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .features ul {
+                grid-template-columns: 1fr;
+            }
+
+            .download-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <h1>रॉयल टेंट हाउस एंड इवेंट्स</h1>
+        <p class="subtitle">प्रीमियम वेडिंग और इवेंट मैनेजमेंट वेबसाइट कोड<br>एक ही फाइल में पूरा HTML, CSS और JavaScript</p>
+
+        <div class="features">
+            <h3>📦 इस कोड में शामिल है:</h3>
+            <ul>
+                <li>रिस्पॉन्सिव डिज़ाइन</li>
+                <li>डार्क मोड टॉगल</li>
+                <li>10 पूर्ण सेक्शन</li>
+                <li>कॉन्टैक्ट फॉर्म</li>
+                <li>इमेज गैलरी</li>
+                <li>टेस्टिमोनियल्स स्लाइडर</li>
+                <li>प्राइसिंग पैकेजेस</li>
+                <li>FAQ ऐक्कॉर्डियन</li>
+                <li>व्हाट्सएप इंटीग्रेशन</li>
+                <li>गूगल मैप्स</li>
+                <li>स्मूथ एनिमेशन्स</li>
+                <li>SEO ऑप्टिमाइज़्ड</li>
+            </ul>
+        </div>
+
+        <button class="download-btn" onclick="downloadCode()">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            वेबसाइट कोड डाउनलोड करें
+        </button>
+
+        <div class="info">
+            <h4>📝 उपयोग कैसे करें:</h4>
+            <p>
+                1. ऊपर दिए गए बटन पर क्लिक करें<br>
+                2. <strong>index.html</strong> फाइल डाउनलोड होगी<br>
+                3. इस फाइल को किसी भी ब्राउज़र में खोलें<br>
+                4. अपनी जरूरत के हिसाब से एडिट करें (नाम, नंबर, ईमेल, आदि)
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function downloadCode() {
+            // पूरी वेबसाइट कोड
+            const websiteCode = `<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Royal Tent House & Events - Premium wedding decoration, tent house, catering, sound & lighting, and complete event management services. Making every celebration memorable.">
+<meta name="keywords" content="tent house, wedding decoration, event management, birthday party, corporate events, catering, sound system, lighting, flower decoration">
+<meta name="author" content="Royal Tent House & Events">
+<meta property="og:title" content="Royal Tent House & Events - Making Every Celebration Memorable">
+<meta property="og:description" content="Premium wedding decoration, tent house, catering, and complete event management services.">
+<meta property="og:type" content="website">
+<title>Royal Tent House & Events | Premium Wedding & Event Management</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Royal Tent House & Events",
+  "image": "https://images.unsplash.com/photo-1519741497674-611481863552",
+  "description": "Premium wedding decoration, tent house, catering, and complete event management services.",
+  "priceRange": "$$",
+  "telephone": "+91-9876543210",
+  "email": "info@royaltenthouse.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Main Street",
+    "addressLocality": "Your City",
+    "addressRegion": "Your State",
+    "postalCode": "000000",
+    "addressCountry": "IN"
+  },
+  "openingHours": "Mo-Su 00:00-23:59",
+  "sameAs": [
+    "https://facebook.com/royaltenthouse",
+    "https://instagram.com/royaltenthouse"
+  ]
+}
+<\/script>
+
+<style>
+:root {
+  --royal-gold: #D4AF37;
+  --royal-gold-light: #F4E5B8;
+  --royal-gold-dark: #B8941F;
+  --dark-blue: #0A1A3F;
+  --dark-blue-light: #1A2B5C;
+  --dark-blue-lighter: #2A3B6C;
+  --white: #FFFFFF;
+  --off-white: #FAFAFA;
+  --cream: #FDF8EE;
+  --text-dark: #1a1a1a;
+  --text-muted: #6b7280;
+  --shadow-sm: 0 2px 8px rgba(10, 26, 63, 0.08);
+  --shadow-md: 0 8px 24px rgba(10, 26, 63, 0.12);
+  --shadow-lg: 0 20px 60px rgba(10, 26, 63, 0.15);
+  --shadow-gold: 0 10px 40px rgba(212, 175, 55, 0.3);
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.25s ease;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #FAFAFA;
+  --bg-tertiary: #F5F5F5;
+  --text-primary: #0A1A3F;
+  --text-secondary: #4a5568;
+  --border-color: rgba(10, 26, 63, 0.1);
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0A1A3F;
+  --bg-secondary: #0F2350;
+  --bg-tertiary: #142A5C;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B8C1D9;
+  --border-color: rgba(212, 175, 55, 0.2);
+  --glass-bg: rgba(10, 26, 63, 0.6);
+  --glass-border: rgba(212, 175, 55, 0.3);
+  --text-dark: #FFFFFF;
+  --text-muted: #B8C1D9;
+  --cream: #0F2350;
+  --off-white: #0F2350;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-tag {
+  display: inline-block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--royal-gold);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 600;
+  position: relative;
+  padding: 0 20px;
+}
+
+.section-tag::before,
+.section-tag::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 1px;
+  background: var(--royal-gold);
+}
+
+.section-tag::before { left: -20px; }
+.section-tag::after { right: -20px; }
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--royal-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme="dark"] .section-title {
+  background: linear-gradient(135deg, var(--royal-gold-light) 0%, var(--royal-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ============ NAVIGATION ============ */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  transition: var(--transition);
+  background: transparent;
+}
+
+.navbar.scrolled {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--glass-border);
+  padding: 12px 0;
+  box-shadow: var(--shadow-md);
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--white);
+  transition: var(--transition);
+}
+
+.navbar.scrolled .logo { color: var(--text-primary); }
+
+.logo-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--royal-gold) 0%, var(--royal-gold-dark) 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-gold);
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-icon::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text-main {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.logo-text-sub {
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--royal-gold);
+  font-weight: 500;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+  align-items: center;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 500;
+  position: relative;
+  transition: var(--transition);
+  padding: 8px 0;
+}
+
+.navbar.scrolled .nav-menu a { color: var(--text-primary); }
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--royal-gold);
+  transition: var(--transition);
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after { width: 100%; }
+
+.nav-menu a:hover { color: var(--royal-gold); }
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1.5px solid var(--royal-gold);
+  color: var(--royal-gold);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  font-size: 1rem;
+}
+
+.theme-toggle:hover {
+  background: var(--royal-gold);
+  color: var(--white);
+}
+</style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fas fa-tent"></i></div>
+                <div class="logo-text">
+                    <span class="logo-text-main">रॉयल टेंट हाउस</span>
+                    <span class="logo-text-sub">एंड इवेंट्स</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">होम</a></li>
+                <li><a href="#services">सेवाएं</a></li>
+                <li><a href="#gallery">गैलरी</a></li>
+                <li><a href="#testimonials">टेस्टिमोनियल्स</a></li>
+                <li><a href="#pricing">प्राइसिंग</a></li>
+                <li><a href="#contact">संपर्क</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">प्रीमियम इवेंट मैनेजमेंट</span>
+                <h2 class="section-title">आपके विशेष अवसर के लिए बनाया गया</h2>
+                <p class="section-subtitle">
+                    रॉयल टेंट हाउस एंड इवेंट्स आपके विवाह, जन्मदिन, कॉर्पोरेट इवेंट्स और अन्य विशेष अवसरों के लिए अद्वितीय और यादगार अनुभव प्रदान करता है।
+                </p>
+            </div>
+            <div class="text-center">
+                <button class="download-btn" onclick="window.location.href='index.html'">
+                    <i class="fas fa-download"></i> अब डाउनलोड करें
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-tertiary">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">हमारी सेवाएं</span>
+                <h2 class="section-title">हम क्या करते हैं?</h2>
+                <p class="section-subtitle">
+                    हमारे विशेषज्ञ टीम आपके हर इवेंट को यादगार बनाने के लिए पूरी तरह तैयार हैं।
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-transparent hover:border-royal-gold transition-all duration-300">
+                    <div class="w-12 h-12 bg-royal-gold-light rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-wedding fa-lg text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">विवाह डेकोरेशन</h3>
+                    <p class="text-text-muted">
+                        आपके विवाह के लिए अद्वितीय और शानदार डिज़ाइन बनाएं, जिसमें फूलों की व्यवस्था, रंगों का चयन और टेंट हाउस डिज़ाइन शामिल है।
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-transparent hover:border-royal-gold transition-all duration-300">
+                    <div class="w-12 h-12 bg-royal-gold-light rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-utensils fa-lg text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">कैटरिंग सेवाएं</h3>
+                    <p class="text-text-muted">
+                        विभिन्न विषयों के लिए विशेष भोजन सेट, आधुनिक और पारंपरिक व्यंजन, और अनुकूलित डिनर प्लान।
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-transparent hover:border-royal-gold transition-all duration-300">
+                    <div class="w-12 h-12 bg-royal-gold-light rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-music fa-lg text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">साउंड और लाइटिंग</h3>
+                    <p class="text-text-muted">
+                        उच्च गुणवत्ता वाली ध्वनि और प्रकाश व्यवस्था जो आपके इवेंट को और भी जादू भरा बनाती है।
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-transparent hover:border-royal-gold transition-all duration-300">
+                    <div class="w-12 h-12 bg-royal-gold-light rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-tent fa-lg text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">टेंट हाउस</h3>
+                    <p class="text-text-muted">
+                        विभिन्न आकारों और डिज़ाइनों में उपलब्ध टेंट हाउस, जो आपके इवेंट के अनुसार अनुकूलित किए जा सकते हैं।
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-transparent hover:border-royal-gold transition-all duration-300">
+                    <div class="w-12 h-12 bg-royal-gold-light rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-calendar-check fa-lg text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">इवेंट मैनेजमेंट</h3>
+                    <p class="text-text-muted">
+                        एक विशेषज्ञ टीम आपके इवेंट के हर पहलू को पूरी तरह से नियंत्रित करती है – योजना, आयोजन, और अंतिम बिंदु तक।
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-transparent hover:border-royal-gold transition-all duration-300">
+                    <div class="w-12 h-12 bg-royal-gold-light rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-flower-power fa-lg text-white">
