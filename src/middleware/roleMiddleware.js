@@ -21,3 +21,46 @@ const roleMiddleware = (allowedRoles) => {
 };
 
 module.exports = roleMiddleware;
+const UserRole = require('../models/UserRole');
+const { errorResponse } = require('../utils/response');
+const logger = require('../utils/logger');
+
+/**
+ * Middleware to check if user has specific role(s)
+ * @param {string|string[]} allowedRoles - Role name(s) allowed to access
+ * @param {boolean} requireAll - If true, user must have ALL roles
+ */
+const checkRole = (allowedRoles, requireAll = false) => {
+  return async (req, res, next) => {
+    try {
+      const userId = req.user.userId;
+      const tentHouseId = req.tenant?.tentHouseId; // From tenant middleware
+
+      // Normalize to array
+      const roles = Array.isArray(allowedRoles) ? allowedRoles : [allowedRoles];
+
+      // Check each role
+      const roleChecks = await Promise.all(
+        roles.map((roleName) => UserRole.hasRole(userId, roleName, tentHouseId))
+      );
+
+      const hasAccess = requireAll
+        ? roleChecks.every((check) => check)
+        : roleChecks.some((check) => check);
+
+      if (!hasAccess) {
+        logger.warn(`User ${userId} denied access. Required roles: ${roles.join(', ')}`);
+        return errorResponse(res, 'Access denied: Insufficient role permissions', 403);
+      }
+
+      // Attach roles to request
+      req.userRoles = roles;
+      next();
+    } catch (error) {
+      logger.error('Role check error:', error);
+      return errorResponse(res, 'Role verification failed', 500);
+    }
+  };
+};
+
+module.exports = checkRole;
